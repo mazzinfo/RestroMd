@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grid_view_items"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/dashboard_imgv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/pos"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/dashboard_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2px"
+        android:text="Demo"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_below="@+id/dashboard_imgv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp" />
+
+</RelativeLayout>

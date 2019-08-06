@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/grid_view_items"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@color/content"
+    android:gravity="center"
+
+    android:padding="5px"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+<TextView
+    android:id="@+id/hms_dashboard_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:gravity="center"
+    android:padding="20px"
+    android:text="Room Status"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    android:textSize="18sp" />
+
+</RelativeLayout>
