@@ -12,6 +12,7 @@ import org.mazz.restromd.Adapter.HmsDashboardAdapter;
 import org.mazz.restromd.Adapter.HmsExpandableListAdapter;
 import org.mazz.restromd.Data.RestApiData;
 import org.mazz.restromd.Event.DashboardEvent;
+import org.mazz.restromd.Event.HmsDashboardEvent;
 import org.mazz.restromd.Modal.DashboardModal;
 import org.mazz.restromd.Modal.RoomStatusModal;
 
@@ -39,7 +40,7 @@ public class HmsActivity extends AppCompatActivity {
 
         hmsDashboardGridView = (GridView) findViewById(R.id.hms_dashboard_grid);
         hmsDashboardGridView.setAdapter(new HmsDashboardAdapter(this,dashboardList));
-        DashboardEvent.hmsDashboardItemClick(this,hmsDashboardGridView);
+        HmsDashboardEvent.hmsDashboardItemClick(this,hmsDashboardGridView);
 
 
         // get the listview

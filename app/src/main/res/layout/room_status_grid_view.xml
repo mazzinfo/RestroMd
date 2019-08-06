@@ -1,0 +1,61 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/content"
+    android:layout_marginBottom="6dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+
+        <TableRow
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_room_status_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:text="@string/app_name"
+
+                android:textColor="@color/white"
+                android:textSize="18sp"
+
+                />
+
+
+
+        </TableRow>
+        <TableRow  android:id="@+id/row_footer"
+            android:padding="10dp"
+           >
+
+            <TextView
+                android:id="@+id/tv_room_status_value"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:text="@string/app_name"
+
+                android:textColor="@color/white"
+                android:textSize="16sp"
+
+                />
+
+
+
+        </TableRow>
+    </TableLayout>
+
+</android.support.v7.widget.CardView>

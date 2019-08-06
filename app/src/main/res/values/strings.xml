@@ -19,5 +19,6 @@
     <string name="cancel">Cancel</string>
     <string name="search_item">Search Item</string>
     <string name="title_activity_hms">HmsActivity</string>
+    <string name="title_activity_room_status">RoomStatusActivity</string>
 
 </resources>
