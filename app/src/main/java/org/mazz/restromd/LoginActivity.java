@@ -10,22 +10,30 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import org.mazz.restromd.Service.SessionManagerService;
+
+import java.util.HashMap;
+
 public class LoginActivity extends AppCompatActivity {
 
-
+    SessionManagerService session;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_login);
+        session = new SessionManagerService(this);
+        session.setRestApiUrlSession("http://192.168.1.120:8090/");
+
+
     }
 
 
     public void loginEvent(View view)
     {
         Intent myIntent = new Intent(this,
-                MainActivity.class);
+                SideMenuActivity.class);
         startActivity(myIntent);
     }
 

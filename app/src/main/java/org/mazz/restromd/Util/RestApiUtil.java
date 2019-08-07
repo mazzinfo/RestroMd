@@ -9,7 +9,8 @@ public class RestApiUtil {
     private static final String BASE_URL = "http://192.168.1.120:8090/";
    // private static final String BASE_URL = "http://192.168.225.112:8080/";
 
-    public static RestApiService getServiceClass(){
-        return RetrofitApiBuilder.getRetrofit(BASE_URL).create(RestApiService.class);
+    public static RestApiService getServiceClass(String restUrl){
+
+        return RetrofitApiBuilder.getRetrofit(restUrl).create(RestApiService.class);
     }
 }

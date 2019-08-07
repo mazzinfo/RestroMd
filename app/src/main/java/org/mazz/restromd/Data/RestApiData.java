@@ -11,6 +11,7 @@ import org.mazz.restromd.Adapter.HmsExpandableListAdapter;
 import org.mazz.restromd.Adapter.RoomStatusGridAdapter;
 import org.mazz.restromd.Modal.RoomStatusModal;
 import org.mazz.restromd.Modal.TotalRoomStatusModal;
+import org.mazz.restromd.Service.SessionManagerService;
 import org.mazz.restromd.Util.RestApiUtil;
 
 import java.util.ArrayList;
@@ -26,11 +27,12 @@ public class RestApiData {
 
 
 
+
     public static void setRoomStatus(final Context context, final ExpandableListView expListView ) {
 
 
-
-        RestApiUtil.getServiceClass().getRoomStatus().enqueue(new Callback<TotalRoomStatusModal>() {
+String resturl="";
+        RestApiUtil.getServiceClass(resturl).getRoomStatus().enqueue(new Callback<TotalRoomStatusModal>() {
 
             HmsExpandableListAdapter hmsListAdapter;
 
@@ -101,11 +103,10 @@ public class RestApiData {
     }
 
 
-    public static void setRoomStatusGrid(final Context context, final GridView roomStatusGrid, final TextView totTextView) {
+    public static void setRoomStatusGrid(final Context context,String restUrl, final GridView roomStatusGrid, final TextView totTextView) {
 
 
-
-        RestApiUtil.getServiceClass().getRoomStatus().enqueue(new Callback<TotalRoomStatusModal>() {
+        RestApiUtil.getServiceClass(restUrl).getRoomStatus().enqueue(new Callback<TotalRoomStatusModal>() {
 
             RoomStatusGridAdapter roomStatusGridAdapter;
             TotalRoomStatusModal trm=new TotalRoomStatusModal();

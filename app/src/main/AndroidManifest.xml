@@ -14,9 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".SideMenuActivity"
+            android:label="@string/title_activity_side_menu"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".ServerActivity"
+            android:label="@string/title_activity_server"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".RoomStatusActivity"
             android:label="@string/title_activity_room_status"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".HmsActivity"
             android:label="@string/title_activity_hms"
